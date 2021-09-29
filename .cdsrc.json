@@ -17,7 +17,7 @@
                         "roles": [
                             "RiskManager"
                         ]
-                    }                    ,
+                    },
                     "ferfranco@deloitte.com": {
                         "password": "initial",
                         "ID": "ferfranco@deloitte.com",
