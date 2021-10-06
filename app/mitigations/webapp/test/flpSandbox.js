@@ -54,7 +54,7 @@ sap.ui.define([
 							"Mitigations-display": {
 								"semanticObject": "Mitigations",
 								"action": "display",
-								"description": "Mitigations",
+								"description": "Mitigations - A Fiori application.",
 								"title": "Mitigations",
 								"signature": {
 									"parameters": {}

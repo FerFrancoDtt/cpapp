@@ -1,7 +1,7 @@
 {
     "name": "mitigations",
     "version": "0.0.1",
-    "description": "Mitigations",
+    "description": "Mitigations - A Fiori application.",
     "keywords": [
         "ui5",
         "openui5",
@@ -13,24 +13,24 @@
         "build:cf": "ui5 build preload --clean-dest --config ui5-deploy.yaml --include-task=generateManifestBundle generateCachebusterInfo"
     },
     "devDependencies": {
-        "@sap/ui5-builder-webide-extension": "1.0.x",
-        "@sap/ux-ui5-tooling": "1",
         "@ui5/cli": "^2.11.1",
         "@ui5/fs": "^2.0.6",
         "@ui5/logger": "^2.0.1",
-        "mbt": "^1.0.15",
+        "@sap/ux-ui5-tooling": "1",
         "rimraf": "3.0.2",
-        "ui5-task-zipper": "^0.3.1"
+        "ui5-middleware-simpleproxy": "^0.2.1",
+        "ui5-middleware-livereload": "^0.1.10",
+        "@sap/ui5-builder-webide-extension": "1.0.x",
+        "ui5-task-zipper": "^0.3.1",
+        "mbt": "^1.0.15"
     },
     "ui5": {
         "dependencies": [
             "ui5-middleware-simpleproxy",
+            "ui5-middleware-livereload",
             "@sap/ui5-builder-webide-extension",
             "ui5-task-zipper",
             "mbt"
         ]
-    },
-    "dependencies": {
-        "ui5-middleware-simpleproxy": "^0.7.3"
     }
 }

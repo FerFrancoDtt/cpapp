@@ -1,6 +1,6 @@
 specVersion: '2.4'
 metadata:
-  name: 'mitigations'
+  name: 'risks'
 type: application
 server:
   customMiddleware:
@@ -14,5 +14,5 @@ server:
     configuration:
       debug: true
       ext: "xml,json,properties"
-      port: 35730
+      port: 35729
       path: "webapp"
