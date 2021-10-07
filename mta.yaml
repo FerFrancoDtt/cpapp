@@ -7,7 +7,7 @@ modules:
   type: nodejs
   path: gen/srv
   requires:
-  - name: cpapp-db
+  - name: cpapp_hdi_db
   - name: cpapp-logs
   provides:
   - name: srv-api
@@ -19,7 +19,7 @@ modules:
   type: hdb
   path: gen/db
   requires:
-  - name: cpapp-db
+  - name: cpapp_hdi_db
   - name: cpapp-logs
   parameters:
     buildpack: nodejs_buildpack
@@ -100,11 +100,14 @@ modules:
     - npm run build:cf
     supported-platforms: []
 resources:
-- name: cpapp-db
+- name: cpapp_hdi_db
   type: com.sap.xs.hdi-container
   parameters:
-    service: hanatrial
+    service: hana
     service-plan: hdi-shared
+    config:
+        schema: sh_bootcamp
+        makeUniqueName: false
   properties:
     hdi-service-name: ${service-name}
 
